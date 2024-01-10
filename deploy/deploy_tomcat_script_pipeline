@@ -1,8 +1,8 @@
 node('built-in') {
     stage('同步源码') {
+            git([url: 'https://wxy521220:521220wasd@github.com/wxy521220/JeeSite4.git', branch: '${branch}'])
 
-             withCredentials([sshUserPrivateKey(credentialsId: 'id_rsa_jenkins', keyFileVariable: 'SSH_KEY')]) {
-                                git branch: '${branch}', url: 'git@github.com:wxy521220/JeeSite4.git'}
+             ##withCredentials([sshUserPrivateKey(credentialsId: 'id_rsa_jenkins', keyFileVariable: 'SSH_KEY')]) {git branch: '${branch}', url: 'git@github.com:wxy521220/JeeSite4.git'}
     }
 
     stage('maven编译打包') {
