@@ -1,4 +1,4 @@
-node('master') {
+node('built-in') {
     stage('同步源码') {
             git([url: 'git@github.com:wxy521220/JeeSite4.git', branch: '${branch}'])
     }
