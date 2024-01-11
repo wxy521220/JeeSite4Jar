@@ -49,9 +49,9 @@ jdbc:
   # Mysql 数据库配置
   type: mysql
 #  driver: com.mysql.jdbc.Driver
-  url: jdbc:mysql://${mysql_ip}:${mysql_port}/jeesite?useSSL=false&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
-  username: ${mysql_user}
-  password: ${mysql_pwd}
+  url: jdbc:mysql://192.168.31.136:3306/jeesite?useSSL=false&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+  username: root
+  password: 521220
   driver: com.mysql.cj.jdbc.Driver
   testSql: SELECT 1
 
