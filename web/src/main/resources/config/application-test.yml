@@ -20,7 +20,7 @@ demoMode: false
 
 server:
 
-  port: 8980
+  port: 8979
   servlet:
     context-path: /
   tomcat:
